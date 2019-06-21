@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false" verbose="2">
+	<listeners>
+		<listener class-name="com.alok.SeleniumTestFramework.Listeners.TestListener"></listener>
+	</listeners>
+
+	<test name="Compose an email and then send it to an email-id" preserve-order="true">
+		<parameter name="RecepientEmailID" value="alok.sabran@gmail.com" />
+		<parameter name="Subject" value="First Test Mail Through Automation" />
+		<parameter name="Body" value="Hi!! This is my first email which is getting send through selenium gmail UI automation." />
+		<classes>
+			<class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario1" />
+		</classes>
+	</test>
+	
+
+	<test name="Search emails based on some criteria and then delete all selected emails" preserve-order="true">
+		<parameter name="SearchFromEmailId" value="ching@chingoracle.com"></parameter>
+		<parameter name="SearchFromSubject" value="Ching"></parameter>
+		<parameter name="NoOfEmailsToBeDeleted" value="3"></parameter>
+		<parameter name="EmailSelectionOption" value="All"></parameter>
+		<classes>
+			<class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" />
+		</classes>
+	</test>
+
+	<test name="Compose an Email as a Draft and then send it later" preserve-order="true">
+		<parameter name="RecepientEmailID" value="alok61189@gmail.com" />
+		<parameter name="CCEmailID" value="alok.sabran@gmail.com" />
+		<parameter name="Subject" value="Draft Email" />
+		<parameter name="Body" value="This is the second email through automation which initially saved as a draft and then modified and sent" />
+		<parameter name="FilePath" value="C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg"></parameter>
+		<classes>
+			<class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" />
+		</classes>
+	</test>
+	
+	<!-- <test name="Open a received email and then forward the same to another email-id" preserve-order="true">
+		<classes>
+			<class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario4" />
+		</classes>
+	</test> -->
+
+</suite>

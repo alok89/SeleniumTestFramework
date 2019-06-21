@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Work Drive\Eclipse Projects\SeleniumTestFramework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 2 failed,  1 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario1" hash-for-method="composeAndSendAnEmail(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is gett...)">composeAndSendAnEmail(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is gett...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" hash-for-method="navigateToTrashSectionAndRemoveEmails(Ching, All)">navigateToTrashSectionAndRemoveEmails(Ching, All)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario1" hash-for-method="goToSentEmailsSectionAndVerifyTheEmail">goToSentEmailsSectionAndVerifyTheEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" hash-for-method="composeAnEmailWithoutSavingIt(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation...)">composeAnEmailWithoutSavingIt(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" hash-for-method="launchGmailAndLogin">launchGmailAndLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" hash-for-method="launchGmailAndLogin">launchGmailAndLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario1" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario1" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" hash-for-method="modifyTheEmailByUploadingFileAndSend(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg)">modifyTheEmailByUploadingFileAndSend(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" hash-for-method="searchEmailsBasedOnCriteria(ching@chingoracle.com, Ching)">searchEmailsBasedOnCriteria(ching@chingoracle.com, Ching)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario3" hash-for-method="searchInDraftsAndOpentheComposedEmail(Draft Email)">searchInDraftsAndOpentheComposedEmail(Draft Email)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.alok.SeleniumTestFramework.GmailTests.TestScenario2" hash-for-method="selectEmailsAndMoveThemToTrash(3)">selectEmailsAndMoveThemToTrash(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="composeAndSendAnEmail(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is gett...)">
+                  </a> <!-- composeAndSendAnEmail(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is gett...) -->
+                  <span class="method-name">composeAndSendAnEmail</span>
+                  <span class="parameters">(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is getting send through selenium gmail UI automation.)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.nH.Hd&quot;}
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ALOKSINGH&apos;, ip: &apos;192.168.43.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 947a881f0010b9de90a4db92e81c7663
+*** Element info: {Using=css selector, value=div.nH.Hd}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at com.alok.SeleniumTestFramework.Pages.Gmail.ComposeEmailSection.isComposeMessageSectionOpen(ComposeEmailSection.java:73)
+	at com.alok.SeleniumTestFramework.GmailTests.TestScenario1.composeAndSendAnEmail(TestScenario1.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(To Test The Compose Email Functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToTrashSectionAndRemoveEmails(Ching, All)">
+                  </a> <!-- navigateToTrashSectionAndRemoveEmails(Ching, All) -->
+                  <span class="method-name">navigateToTrashSectionAndRemoveEmails</span>
+                  <span class="parameters">(Ching, All)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.cssSelector: input.ZH.nr.aQd&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.alok.SeleniumTestFramework.Utility.WaitsForWebElement.findElementUsingWebDriverWait(WaitsForWebElement.java:44)
+	at com.alok.SeleniumTestFramework.Pages.Gmail.SearchEmailSection.enterTheSubject(SearchEmailSection.java:51)
+	at com.alok.SeleniumTestFramework.GmailTests.TestScenario2.navigateToTrashSectionAndRemoveEmails(TestScenario2.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input.ZH.nr.aQd&quot;}
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ALOKSINGH&apos;, ip: &apos;192.168.43.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: c5efc79962b6bcb9892c536691f19813
+*** Element info: {Using=css selector, value=input.ZH.nr.aQd}
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 28 more
+
+</div> <!-- stack-trace -->
+                  <em>
+(Navigate to trash section emails and then remove selected emails forever)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToSentEmailsSectionAndVerifyTheEmail">
+                  </a> <!-- goToSentEmailsSectionAndVerifyTheEmail -->
+                  <span class="method-name">goToSentEmailsSectionAndVerifyTheEmail</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestScenario1.goToSentEmailsSectionAndVerifyTheEmail(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(To test that the Email has been sent)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                  <em>
+(To test the Gmail Logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <em>
+(To Test The Gmail Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="composeAnEmailWithoutSavingIt(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation...)">
+                  </a> <!-- composeAnEmailWithoutSavingIt(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation...) -->
+                  <span class="method-name">composeAnEmailWithoutSavingIt</span>
+                  <span class="parameters">(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation which initially saved as a draft and then modified and sent)</span>
+                  <em>
+(Composing an email without saving it)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchGmailAndLogin">
+                  </a> <!-- launchGmailAndLogin -->
+                  <span class="method-name">launchGmailAndLogin</span>
+                  <em>
+(Launching Gmail application and then login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <em>
+(Logging out from Gamil)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyTheEmailByUploadingFileAndSend(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg)">
+                  </a> <!-- modifyTheEmailByUploadingFileAndSend(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg) -->
+                  <span class="method-name">modifyTheEmailByUploadingFileAndSend</span>
+                  <span class="parameters">(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg)</span>
+                  <em>
+(Modifyng the email by uploading a file and then sending it)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchInDraftsAndOpentheComposedEmail(Draft Email)">
+                  </a> <!-- searchInDraftsAndOpentheComposedEmail(Draft Email) -->
+                  <span class="method-name">searchInDraftsAndOpentheComposedEmail</span>
+                  <span class="parameters">(Draft Email)</span>
+                  <em>
+(Searching the composed email in Drafts section and then opening it)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchGmailAndLogin">
+                  </a> <!-- launchGmailAndLogin -->
+                  <span class="method-name">launchGmailAndLogin</span>
+                  <em>
+(Launching Gmail application and then login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <em>
+(Logging out from Gamil)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchEmailsBasedOnCriteria(ching@chingoracle.com, Ching)">
+                  </a> <!-- searchEmailsBasedOnCriteria(ching@chingoracle.com, Ching) -->
+                  <span class="method-name">searchEmailsBasedOnCriteria</span>
+                  <span class="parameters">(ching@chingoracle.com, Ching)</span>
+                  <em>
+(To test search email functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectEmailsAndMoveThemToTrash(3)">
+                  </a> <!-- selectEmailsAndMoveThemToTrash(3) -->
+                  <span class="method-name">selectEmailsAndMoveThemToTrash</span>
+                  <span class="parameters">(3)</span>
+                  <em>
+(To test emails are getting selected and then moving them to trash)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Work Drive\Eclipse Projects\SeleniumTestFramework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.alok.SeleniumTestFramework.Listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Compose an email and then send it to an email-id&quot;&gt;
+    &lt;parameter name=&quot;RecepientEmailID&quot; value=&quot;alok.sabran@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;Body&quot; value=&quot;Hi!! This is my first email which is getting send through selenium gmail UI automation.&quot;/&gt;
+    &lt;parameter name=&quot;Subject&quot; value=&quot;First Test Mail Through Automation&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.alok.SeleniumTestFramework.GmailTests.TestScenario1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Compose an email and then send it to an email-id --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Search emails based on some criteria and then delete all selected emails&quot;&gt;
+    &lt;parameter name=&quot;SearchFromSubject&quot; value=&quot;Ching&quot;/&gt;
+    &lt;parameter name=&quot;NoOfEmailsToBeDeleted&quot; value=&quot;3&quot;/&gt;
+    &lt;parameter name=&quot;EmailSelectionOption&quot; value=&quot;All&quot;/&gt;
+    &lt;parameter name=&quot;SearchFromEmailId&quot; value=&quot;ching@chingoracle.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.alok.SeleniumTestFramework.GmailTests.TestScenario2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search emails based on some criteria and then delete all selected emails --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Compose an Email as a Draft and then send it later&quot;&gt;
+    &lt;parameter name=&quot;FilePath&quot; value=&quot;C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg&quot;/&gt;
+    &lt;parameter name=&quot;CCEmailID&quot; value=&quot;alok.sabran@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;RecepientEmailID&quot; value=&quot;alok61189@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;Body&quot; value=&quot;This is the second email through automation which initially saved as a draft and then modified and sent&quot;/&gt;
+    &lt;parameter name=&quot;Subject&quot; value=&quot;Draft Email&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.alok.SeleniumTestFramework.GmailTests.TestScenario3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Compose an Email as a Draft and then send it later --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Compose an email and then send it to an email-id&quot;&gt;
+    &lt;parameter name=&quot;RecepientEmailID&quot; value=&quot;alok.sabran@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;Body&quot; value=&quot;Hi!! This is my first email which is getting send through selenium gmail UI automation.&quot;/&gt;
+    &lt;parameter name=&quot;Subject&quot; value=&quot;First Test Mail Through Automation&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Compose an email and then send it to an email-id --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Search emails based on some criteria and then delete all selected emails&quot;&gt;
+    &lt;parameter name=&quot;SearchFromSubject&quot; value=&quot;Ching&quot;/&gt;
+    &lt;parameter name=&quot;NoOfEmailsToBeDeleted&quot; value=&quot;3&quot;/&gt;
+    &lt;parameter name=&quot;EmailSelectionOption&quot; value=&quot;All&quot;/&gt;
+    &lt;parameter name=&quot;SearchFromEmailId&quot; value=&quot;ching@chingoracle.com&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Search emails based on some criteria and then delete all selected emails --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Compose an Email as a Draft and then send it later&quot;&gt;
+    &lt;parameter name=&quot;FilePath&quot; value=&quot;C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg&quot;/&gt;
+    &lt;parameter name=&quot;CCEmailID&quot; value=&quot;alok.sabran@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;RecepientEmailID&quot; value=&quot;alok61189@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;Body&quot; value=&quot;This is the second email through automation which initially saved as a draft and then modified and sent&quot;/&gt;
+    &lt;parameter name=&quot;Subject&quot; value=&quot;Draft Email&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Compose an Email as a Draft and then send it later --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Compose an email and then send it to an email-id (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Search emails based on some criteria and then delete all selected emails (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Compose an Email as a Draft and then send it later (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Compose an email and then send it to an email-id (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Search emails based on some criteria and then delete all selected emails (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Compose an Email as a Draft and then send it later (0 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logout')
+data.setCell(0, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario2')
+data.setCell(0, 3, 47797);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'logOut')
+data.setCell(1, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario1')
+data.setCell(1, 3, 42865);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'launchGmailAndLogin')
+data.setCell(2, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario3')
+data.setCell(2, 3, 38506);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'launchGmailAndLogin')
+data.setCell(3, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario2')
+data.setCell(3, 3, 35158);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'navigateToTrashSectionAndRemoveEmails')
+data.setCell(4, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario2')
+data.setCell(4, 3, 21692);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchInDraftsAndOpentheComposedEmail')
+data.setCell(5, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario3')
+data.setCell(5, 3, 19079);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login')
+data.setCell(6, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario1')
+data.setCell(6, 3, 17056);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logout')
+data.setCell(7, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario3')
+data.setCell(7, 3, 15766);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'modifyTheEmailByUploadingFileAndSend')
+data.setCell(8, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario3')
+data.setCell(8, 3, 15280);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchEmailsBasedOnCriteria')
+data.setCell(9, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario2')
+data.setCell(9, 3, 13024);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'composeAnEmailWithoutSavingIt')
+data.setCell(10, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario3')
+data.setCell(10, 3, 4902);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'selectEmailsAndMoveThemToTrash')
+data.setCell(11, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario2')
+data.setCell(11, 3, 4150);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'composeAndSendAnEmail')
+data.setCell(12, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario1')
+data.setCell(12, 3, 307);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'goToSentEmailsSectionAndVerifyTheEmail')
+data.setCell(13, 2, 'com.alok.SeleniumTestFramework.GmailTests.TestScenario1')
+data.setCell(13, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">projectPreRequisites</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testScenarioSetUp(org.testng.TestRunner@4096aa05)</span>
+                <span class="method-start">298 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">scenarioPrerequisites(org.testng.xml.XmlTest@32bdddb0)</span>
+                <span class="method-start">5370 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.login())</span>
+                <span class="method-start">5374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">5382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.composeAndSendAnEmail(java.lang....)</span>
+                <span class="method-start">22452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">composeAndSendAnEmail(alok.sabran@gmail.com, First Test Mail Through Automation, Hi!! This is my first email which is gett...)</span>
+                <span class="method-start">22452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.logOut())</span>
+                <span class="method-start">23404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">23404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeScenarioExecution</span>
+                <span class="method-start">66273 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66520 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testScenarioSetUp(org.testng.TestRunner@6c806c8b)</span>
+                <span class="method-start">67541 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">scenarioPrerequisites(org.testng.xml.XmlTest@77b56e34)</span>
+                <span class="method-start">72184 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.launchGmailAndLogin())</span>
+                <span class="method-start">72187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">launchGmailAndLogin</span>
+                <span class="method-start">72188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.searchEmailsBasedOnCriteria(java...)</span>
+                <span class="method-start">107351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchEmailsBasedOnCriteria(ching@chingoracle.com, Ching)</span>
+                <span class="method-start">107351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.selectEmailsAndMoveThemToTrash(j...)</span>
+                <span class="method-start">120393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectEmailsAndMoveThemToTrash(3)</span>
+                <span class="method-start">120393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.navigateToTrashSectionAndRemoveE...)</span>
+                <span class="method-start">124546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navigateToTrashSectionAndRemoveEmails(Ching, All)</span>
+                <span class="method-start">124550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.logout())</span>
+                <span class="method-start">146721 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">146722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeScenarioExecution</span>
+                <span class="method-start">194519 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194760 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.alok.SeleniumTestFramework.GmailTests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testScenarioSetUp(org.testng.TestRunner@6dfcffb5)</span>
+                <span class="method-start">195701 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">scenarioPrerequisites(org.testng.xml.XmlTest@41e9f326)</span>
+                <span class="method-start">200027 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.launchGmailAndLogin())</span>
+                <span class="method-start">200027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">launchGmailAndLogin</span>
+                <span class="method-start">200027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.composeAnEmailWithoutSavingIt(ja...)</span>
+                <span class="method-start">238535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">composeAnEmailWithoutSavingIt(alok61189@gmail.com, alok.sabran@gmail.com, Draft Email, This is the second email through automation...)</span>
+                <span class="method-start">238535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.searchInDraftsAndOpentheComposed...)</span>
+                <span class="method-start">243439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchInDraftsAndOpentheComposedEmail(Draft Email)</span>
+                <span class="method-start">243440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.modifyTheEmailByUploadingFileAnd...)</span>
+                <span class="method-start">262526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">modifyTheEmailByUploadingFileAndSend(Draft Email, C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg)</span>
+                <span class="method-start">262526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">testCaseSetup(public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.logout())</span>
+                <span class="method-start">277806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">277814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeScenarioExecution</span>
+                <span class="method-start">293580 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">295778 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeTheProjectExecution</span>
+                <span class="method-start">296819 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

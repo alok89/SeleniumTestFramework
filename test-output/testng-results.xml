@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="0" total="14" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="296423" started-at="2019-06-19T05:16:19Z" finished-at="2019-06-19T05:21:16Z">
+    <groups>
+    </groups>
+    <test name="Compose an email and then send it to an email-id" duration-ms="67006" started-at="2019-06-19T05:16:19Z" finished-at="2019-06-19T05:17:26Z">
+      <class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario1">
+        <test-method status="PASS" signature="testScenarioSetUp(org.testng.ITestContext)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="testScenarioSetUp" is-config="true" duration-ms="5059" started-at="2019-06-19T05:16:19Z" finished-at="2019-06-19T05:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4096aa05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarioSetUp -->
+        <test-method status="PASS" signature="scenarioPrerequisites(org.testng.xml.XmlTest)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="scenarioPrerequisites" is-config="true" duration-ms="3" started-at="2019-06-19T05:16:25Z" finished-at="2019-06-19T05:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.xml.XmlTest@32bdddb0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenarioPrerequisites -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="testCaseSetup" is-config="true" duration-ms="8" started-at="2019-06-19T05:16:25Z" finished-at="2019-06-19T05:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="login()[pri:1, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="login" duration-ms="17056" started-at="2019-06-19T05:16:25Z" description="To Test The Gmail Login" finished-at="2019-06-19T05:16:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="composeAndSendAnEmail(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="composeAndSendAnEmail" duration-ms="307" started-at="2019-06-19T05:16:42Z" description="To Test The Compose Email Functionality" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario1.login" finished-at="2019-06-19T05:16:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alok.sabran@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[First Test Mail Through Automation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hi!! This is my first email which is getting send through selenium gmail UI automation.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.nH.Hd"}
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ALOKSINGH', ip: '192.168.43.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 947a881f0010b9de90a4db92e81c7663
+*** Element info: {Using=css selector, value=div.nH.Hd}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.nH.Hd"}
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ALOKSINGH', ip: '192.168.43.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 947a881f0010b9de90a4db92e81c7663
+*** Element info: {Using=css selector, value=div.nH.Hd}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+at com.alok.SeleniumTestFramework.Pages.Gmail.ComposeEmailSection.isComposeMessageSectionOpen(ComposeEmailSection.java:73)
+at com.alok.SeleniumTestFramework.GmailTests.TestScenario1.composeAndSendAnEmail(TestScenario1.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeAndSendAnEmail -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:16:42Z" finished-at="2019-06-19T05:16:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.composeAndSendAnEmail(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="SKIP" signature="goToSentEmailsSectionAndVerifyTheEmail(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="goToSentEmailsSectionAndVerifyTheEmail" duration-ms="0" started-at="2019-06-19T05:16:43Z" description="To test that the Email has been sent" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario1.composeAndSendAnEmail" finished-at="2019-06-19T05:16:43Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestScenario1.goToSentEmailsSectionAndVerifyTheEmail(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestScenario1.goToSentEmailsSectionAndVerifyTheEmail(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSentEmailsSectionAndVerifyTheEmail -->
+        <test-method status="PASS" signature="logOut()[pri:4, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="logOut" duration-ms="42865" started-at="2019-06-19T05:16:43Z" description="To test the Gmail Logout" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario1.login" finished-at="2019-06-19T05:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:16:43Z" finished-at="2019-06-19T05:16:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario1.logOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="closeScenarioExecution()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="closeScenarioExecution" is-config="true" duration-ms="247" started-at="2019-06-19T05:17:25Z" finished-at="2019-06-19T05:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeScenarioExecution -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario1@8646db9]" name="tearDown" is-config="true" duration-ms="760" started-at="2019-06-19T05:17:26Z" finished-at="2019-06-19T05:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.alok.SeleniumTestFramework.GmailTests.TestScenario1 -->
+    </test> <!-- Compose an email and then send it to an email-id -->
+    <test name="Search emails based on some criteria and then delete all selected emails" duration-ms="127989" started-at="2019-06-19T05:17:27Z" finished-at="2019-06-19T05:19:35Z">
+      <class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario2">
+        <test-method status="PASS" signature="testScenarioSetUp(org.testng.ITestContext)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testScenarioSetUp" is-config="true" duration-ms="4642" started-at="2019-06-19T05:17:27Z" finished-at="2019-06-19T05:17:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c806c8b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarioSetUp -->
+        <test-method status="PASS" signature="scenarioPrerequisites(org.testng.xml.XmlTest)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="scenarioPrerequisites" is-config="true" duration-ms="1" started-at="2019-06-19T05:17:31Z" finished-at="2019-06-19T05:17:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.xml.XmlTest@77b56e34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenarioPrerequisites -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testCaseSetup" is-config="true" duration-ms="1" started-at="2019-06-19T05:17:31Z" finished-at="2019-06-19T05:17:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.launchGmailAndLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="launchGmailAndLogin()[pri:1, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="launchGmailAndLogin" duration-ms="35158" started-at="2019-06-19T05:17:31Z" description="Launching Gmail application and then login" finished-at="2019-06-19T05:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchGmailAndLogin -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:18:07Z" finished-at="2019-06-19T05:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.searchEmailsBasedOnCriteria(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="searchEmailsBasedOnCriteria(java.lang.String, java.lang.String)[pri:2, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="searchEmailsBasedOnCriteria" duration-ms="13024" started-at="2019-06-19T05:18:07Z" description="To test search email functionality" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario2.launchGmailAndLogin" finished-at="2019-06-19T05:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ching@chingoracle.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ching]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmailsBasedOnCriteria -->
+        <test-method status="PASS" signature="selectEmailsAndMoveThemToTrash(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="selectEmailsAndMoveThemToTrash" duration-ms="4150" started-at="2019-06-19T05:18:20Z" description="To test emails are getting selected and then moving them to trash" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario2.searchEmailsBasedOnCriteria" finished-at="2019-06-19T05:18:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectEmailsAndMoveThemToTrash -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:18:20Z" finished-at="2019-06-19T05:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.selectEmailsAndMoveThemToTrash(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testCaseSetup" is-config="true" duration-ms="4" started-at="2019-06-19T05:18:24Z" finished-at="2019-06-19T05:18:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.navigateToTrashSectionAndRemoveEmails(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="FAIL" signature="navigateToTrashSectionAndRemoveEmails(java.lang.String, java.lang.String)[pri:4, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="navigateToTrashSectionAndRemoveEmails" duration-ms="21692" started-at="2019-06-19T05:18:24Z" description="Navigate to trash section emails and then remove selected emails forever" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario2.selectEmailsAndMoveThemToTrash" finished-at="2019-06-19T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ching]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: input.ZH.nr.aQd' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: input.ZH.nr.aQd' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.alok.SeleniumTestFramework.Utility.WaitsForWebElement.findElementUsingWebDriverWait(WaitsForWebElement.java:44)
+at com.alok.SeleniumTestFramework.Pages.Gmail.SearchEmailSection.enterTheSubject(SearchEmailSection.java:51)
+at com.alok.SeleniumTestFramework.GmailTests.TestScenario2.navigateToTrashSectionAndRemoveEmails(TestScenario2.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input.ZH.nr.aQd"}
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ALOKSINGH', ip: '192.168.43.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: c5efc79962b6bcb9892c536691f19813
+*** Element info: {Using=css selector, value=input.ZH.nr.aQd}
+at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToTrashSectionAndRemoveEmails -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:18:46Z" finished-at="2019-06-19T05:18:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario2.logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="logout()[pri:5, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="logout" duration-ms="47797" started-at="2019-06-19T05:18:46Z" description="Logging out from Gamil" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario2.launchGmailAndLogin" finished-at="2019-06-19T05:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeScenarioExecution()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="closeScenarioExecution" is-config="true" duration-ms="241" started-at="2019-06-19T05:19:34Z" finished-at="2019-06-19T05:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeScenarioExecution -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario2@4fb64261]" name="tearDown" is-config="true" duration-ms="767" started-at="2019-06-19T05:19:34Z" finished-at="2019-06-19T05:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.alok.SeleniumTestFramework.GmailTests.TestScenario2 -->
+    </test> <!-- Search emails based on some criteria and then delete all selected emails -->
+    <test name="Compose an Email as a Draft and then send it later" duration-ms="101010" started-at="2019-06-19T05:19:35Z" finished-at="2019-06-19T05:21:16Z">
+      <class name="com.alok.SeleniumTestFramework.GmailTests.TestScenario3">
+        <test-method status="PASS" signature="projectPreRequisites()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="projectPreRequisites" is-config="true" duration-ms="274" started-at="2019-06-19T05:16:19Z" finished-at="2019-06-19T05:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectPreRequisites -->
+        <test-method status="PASS" signature="testScenarioSetUp(org.testng.ITestContext)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testScenarioSetUp" is-config="true" duration-ms="4326" started-at="2019-06-19T05:19:35Z" finished-at="2019-06-19T05:19:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6dfcffb5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarioSetUp -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:19:39Z" finished-at="2019-06-19T05:19:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.launchGmailAndLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="scenarioPrerequisites(org.testng.xml.XmlTest)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="scenarioPrerequisites" is-config="true" duration-ms="0" started-at="2019-06-19T05:19:39Z" finished-at="2019-06-19T05:19:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.xml.XmlTest@41e9f326]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenarioPrerequisites -->
+        <test-method status="PASS" signature="launchGmailAndLogin()[pri:1, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="launchGmailAndLogin" duration-ms="38506" started-at="2019-06-19T05:19:39Z" description="Launching Gmail application and then login" finished-at="2019-06-19T05:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchGmailAndLogin -->
+        <test-method status="PASS" signature="composeAnEmailWithoutSavingIt(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="composeAnEmailWithoutSavingIt" duration-ms="4902" started-at="2019-06-19T05:20:18Z" description="Composing an email without saving it" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario3.launchGmailAndLogin" finished-at="2019-06-19T05:20:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alok61189@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alok.sabran@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Draft Email]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[This is the second email through automation which initially saved as a draft and then modified and sent]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeAnEmailWithoutSavingIt -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:20:18Z" finished-at="2019-06-19T05:20:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.composeAnEmailWithoutSavingIt(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testCaseSetup" is-config="true" duration-ms="1" started-at="2019-06-19T05:20:23Z" finished-at="2019-06-19T05:20:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.searchInDraftsAndOpentheComposedEmail(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="searchInDraftsAndOpentheComposedEmail(java.lang.String)[pri:3, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="searchInDraftsAndOpentheComposedEmail" duration-ms="19079" started-at="2019-06-19T05:20:23Z" description="Searching the composed email in Drafts section and then opening it" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario3.composeAnEmailWithoutSavingIt" finished-at="2019-06-19T05:20:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Draft Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInDraftsAndOpentheComposedEmail -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testCaseSetup" is-config="true" duration-ms="0" started-at="2019-06-19T05:20:42Z" finished-at="2019-06-19T05:20:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.modifyTheEmailByUploadingFileAndSend(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="modifyTheEmailByUploadingFileAndSend(java.lang.String, java.lang.String)[pri:4, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="modifyTheEmailByUploadingFileAndSend" duration-ms="15280" started-at="2019-06-19T05:20:42Z" description="Modifyng the email by uploading a file and then sending it" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario3.searchInDraftsAndOpentheComposedEmail" finished-at="2019-06-19T05:20:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Draft Email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Users\Dell\Desktop\Alok Singh_Photograph.jpeg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyTheEmailByUploadingFileAndSend -->
+        <test-method status="PASS" signature="testCaseSetup(java.lang.reflect.Method)[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="testCaseSetup" is-config="true" duration-ms="8" started-at="2019-06-19T05:20:57Z" finished-at="2019-06-19T05:20:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.alok.SeleniumTestFramework.GmailTests.TestScenario3.logout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSetup -->
+        <test-method status="PASS" signature="logout()[pri:5, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="logout" duration-ms="15766" started-at="2019-06-19T05:20:57Z" description="Logging out from Gamil" depends-on-methods="com.alok.SeleniumTestFramework.GmailTests.TestScenario3.launchGmailAndLogin" finished-at="2019-06-19T05:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeScenarioExecution()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="closeScenarioExecution" is-config="true" duration-ms="2198" started-at="2019-06-19T05:21:13Z" finished-at="2019-06-19T05:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeScenarioExecution -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="tearDown" is-config="true" duration-ms="919" started-at="2019-06-19T05:21:15Z" finished-at="2019-06-19T05:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeTheProjectExecution()[pri:0, instance:com.alok.SeleniumTestFramework.GmailTests.TestScenario3@401e7803]" name="closeTheProjectExecution" is-config="true" duration-ms="432" started-at="2019-06-19T05:21:16Z" finished-at="2019-06-19T05:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheProjectExecution -->
+      </class> <!-- com.alok.SeleniumTestFramework.GmailTests.TestScenario3 -->
+    </test> <!-- Compose an Email as a Draft and then send it later -->
+  </suite> <!-- Suite -->
+</testng-results>
