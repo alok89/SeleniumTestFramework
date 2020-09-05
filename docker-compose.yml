@@ -1,0 +1,27 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.141.59
+    ports: 
+      - "3000:4444"
+  chrome:
+    image: selenium/node-chrome-debug:3.141.59
+    depends_on: 
+      - hub
+    environment: 
+      - HUB_HOST=hub
+      - NODE_MAX_SESSION=3
+      - NODE_MAX_INSTANCES=3
+  firefox:
+    image: selenium/node-firefox-debug:3.141.59
+    depends_on: 
+      - hub
+    environment: 
+      - HUB_HOST=hub
+  #testscripts:
+    #image: aloksabran/test-docker:added-healthcheck
+    #depends_on: 
+    #  - chrome
+    #  - firefox
+    #volumes: 
+    #  - E:/DockerFolder/output:/usr/SeleniumProject/test-output
